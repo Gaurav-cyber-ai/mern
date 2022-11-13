@@ -1,0 +1,21 @@
+GET http://localhost:3001/todos
+
+###
+
+POST http://localhost:3001/todo/new  url HTTP/1.1
+Content-Type: application/json
+
+{
+"text": "Pick up pen"
+}
+
+###
+
+DELETE http://localhost:3001/todo/delete
+
+###
+
+PUT http://localhost:3001/todo/complete
+{
+"text": "Go for cart"
+}
